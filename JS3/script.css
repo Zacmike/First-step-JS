@@ -1,0 +1,75 @@
+// 1
+
+const userName = prompt("Введите имя", "");
+alert("Привет, " + userName + " !");
+
+
+// 2
+
+const currentYear = 2023;
+const userBirth = prompt("Введите свой год рождения");
+alert("Ваш возраст " + (currentYear - userBirth) + " лет");
+
+// 3
+
+const sideSquare = prompt("Введите длину стороны квадрата");
+alert("Периметр квадрата равен: " + 4 * sideSquare);
+
+// 4
+
+const circleRadius = prompt("Введите радиус окружности");
+var area = Math.PI * circleRadius ** 2;
+alert("Площадь окружности: " + area);
+
+// 5
+
+const distance = prompt("Введите расстояние между городами в км");
+const time = prompt("За сколько часов нужно добраться ?");
+const speed = distance / time;
+alert("Нужно двигаться со скоростью: " + speed + " км/ч");
+
+// 6
+
+const rate = prompt("Введите текущий курс доллара по отношению к евро: ");
+const value = prompt("Введите количество долларов для обмена: ");
+alert("По текущему курсу при обмене вы получите " + value * rate + " евро");
+
+// 7
+
+const GB_MB = 1024;
+const flash = prompt("Какой объем флешки в ГБ? ");
+const size = Math.floor(flash * 1000 / GB_MB);
+if (size < 0) {
+    alert("Флешка заполнена, освободите место");
+}
+else {
+    alert("На флешку поместится " + size + " файлов объемом 8250 Мб");
+}
+
+// 8
+
+const moneyWallet = prompt("Сколько денег у вас в кошельке: ");
+const costChocolate = prompt("Сколько стоит одна шоколадка: ");
+const quantityChocolate = Math.floor(moneyWallet / costChocolate);
+const change = moneyWallet - costChocolate * quantityChocolate;
+if (quantityChocolate < 1) {
+  alert("У вас не хватает денег");
+}
+else {
+  alert("Вы можете купить " + quantityChocolate + " шоколадок, сдача составит" + change);
+}
+
+// 9
+
+const number = prompt("Введите 3-значное число: ");
+const a = number % 10; // Получаем значение последней цифры
+const b = (number - a) / 10 % 10; // Вычитаем последнюю цифру и делим результат на 10
+const c = (number - a - b * 10) / 100; // вычитаем сумму последней и второй цифры и делим на 100
+alert(a * 100 + b * 10 + c);
+
+// 10
+
+const num = parseInt(prompt("Введите целое число:"));
+const reverse = num % 2 == 0;
+alert(reverse ? "Четное число" : "Нечетное число"); 
+// переменные a и b не работали
