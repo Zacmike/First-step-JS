@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <input type="button" style="width: 100px" onclick="this.style.width = parseInt(this.style.width)+(parseInt(this.style.width) == 110 ? -10 : 10)+'px'" value="Увеличить">
+    <div class="button"></div>
+        <button class ="changeTextButton">Изменить текст</button>
+    </div>
+    <div onclick="console.log('Привет');" class="box">Привет</div>
+    <div onmouseleave="test()" class="box">Привет</div>
+    <div onmousemove="test()" class="box">Привет</div>
+    
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
