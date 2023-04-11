@@ -1,0 +1,25 @@
+.container {
+  background-color: #FBF2E9;
+  width: 600px;
+  margin: auto;
+  border: 1px solid black;
+  height: auto;
+  padding: 0px 30px;
+}
+
+#field {
+  width: 35px;
+  margin: 5px;
+}
+
+#checkform {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 20px;
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+}/*# sourceMappingURL=style.css.map */
